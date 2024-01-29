@@ -58,7 +58,7 @@ Starte deine SSH Verbindung neu und teste, ob du folgendes Command ausführen ka
 
 docker ps
 
-**Auf der EC2 Instanz** : Erstelle einen neunen Ordner unddocker-compose file:
+# Auf der EC2 Instanz : Erstelle einen neunen Ordner unddocker-compose file:
 
 sudo mkdir -p /var/jenkins\_home
 
@@ -94,7 +94,7 @@ volumes:
 
 - /var/run/docker.sock:/var/run/docker.sock
 
-Immer noch auf der EC2 Instanz und im jenkins Ordner, starte den Container
+# Immer noch auf der EC2 Instanz und im jenkins Ordner, starte den Container
 
 sudo docker compose up
 
@@ -106,11 +106,13 @@ jenkins |
 
 jenkins | 0d63c16741c445839c0182dc29e0efee
 
-Öffne Jenkins in deinem Webbrowser, indem du die öffentliche IP-Adresse der EC2 Instance gefolgt von Port 8080 eingibst (z.B., http://\<public-ip\>:8080 ). Gebe hier das kopierte Password ein.
+# Öffne Jenkins in deinem Webbrowser, indem du die öffentliche IP-Adresse der EC2 Instance gefolgt von Port 8080 eingibst 
+
+(z.B., http://\<public-ip\>:8080 ). Gebe hier das kopierte Password ein.
 
 Klicke jetzt auf Select Plugins to install
 
-**Entferne den Haken bei:**
+# Entferne den Haken bei:
 
 Ant
 
