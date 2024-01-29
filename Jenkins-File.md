@@ -57,7 +57,7 @@ Starte deine SSH Verbindung neu und teste, ob du folgendes Command ausführen ka
 
 docker ps
 
-## Auf der EC2 Instanz : Erstelle einen neunen Ordner unddocker-compose file:
+## Auf der EC2 Instanz : Erstelle einen neuen Ordner und docker-compose file:
 
 sudo mkdir -p /var/jenkins\_home
 
