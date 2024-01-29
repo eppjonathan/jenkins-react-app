@@ -97,7 +97,7 @@ volumes:
 
 sudo docker compose up
 
-# Achte auf den Log und kopiere das initiale Password:
+## Achte auf den Log und kopiere das initiale Password:
 
 jenkins | Jenkins initial setup is required. An admin user has been created and a password generated. jenkins | Please use the following password to proceed to installation:
 
@@ -177,10 +177,10 @@ Klicke auf Console Output
 
 **2.4 Anpassen des Jenkinsfile**
 
-### Öffne deinen Fork mit einem Texteditor
+Öffne deinen Fork mit einem Texteditor
 
-### Bearbeite dieJenkinsfile Datei, sodass neben dem npm ci auch ein Build der React App ausgeführt wird Füge deine Änderungen nach dem echo command ein
+Bearbeite dieJenkinsfile Datei, sodass neben dem npm ci auch ein Build der React App ausgeführt wird Füge deine Änderungen nach dem echo command ein
 
-### Commite und Pushe deine Änderungen
+Commite und Pushe deine Änderungen
 
-### Nach spätestens 5 Minuten sollte ein neuer Job starten
+Nach spätestens 5 Minuten sollte ein neuer Job starten
