@@ -98,7 +98,7 @@ Immer noch auf der EC2 Instanz und im jenkins Ordner, starte den Container
 
 sudo docker compose up
 
-Achte auf den Log und kopiere das initiale Password:
+**Achte auf den Log und kopiere das initiale Password:**
 
 jenkins | Jenkins initial setup is required. An admin user has been created and a password generated. jenkins | Please use the following password to proceed to installation:
 
@@ -110,7 +110,7 @@ jenkins | 0d63c16741c445839c0182dc29e0efee
 
 Klicke jetzt auf Select Plugins to install
 
-Entferne den Haken bei:
+**Entferne den Haken bei:**
 
 Ant
 
