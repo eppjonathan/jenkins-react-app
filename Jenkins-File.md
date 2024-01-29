@@ -1,5 +1,5 @@
 
-## Praxis: Jenkins mit AWS EC2 Instance ##
+# Praxis: Jenkins mit AWS EC2 Instance 
 
 **Zielsetzung**
 
@@ -57,7 +57,7 @@ Starte deine SSH Verbindung neu und teste, ob du folgendes Command ausführen ka
 
 docker ps
 
-# Auf der EC2 Instanz : Erstelle einen neunen Ordner unddocker-compose file:
+## Auf der EC2 Instanz : Erstelle einen neunen Ordner unddocker-compose file:
 
 sudo mkdir -p /var/jenkins\_home
 
@@ -93,11 +93,11 @@ volumes:
 
 - /var/run/docker.sock:/var/run/docker.sock
 
-# Immer noch auf der EC2 Instanz und im jenkins Ordner, starte den Container
+## Immer noch auf der EC2 Instanz und im jenkins Ordner, starte den Container
 
 sudo docker compose up
 
-**Achte auf den Log und kopiere das initiale Password:**
+# Achte auf den Log und kopiere das initiale Password:
 
 jenkins | Jenkins initial setup is required. An admin user has been created and a password generated. jenkins | Please use the following password to proceed to installation:
 
@@ -105,13 +105,13 @@ jenkins |
 
 jenkins | 0d63c16741c445839c0182dc29e0efee
 
-# Öffne Jenkins in deinem Webbrowser, indem du die öffentliche IP-Adresse der EC2 Instance gefolgt von Port 8080 eingibst 
+## Öffne Jenkins in deinem Webbrowser, indem du die öffentliche IP-Adresse der EC2 Instance gefolgt von Port 8080 eingibst 
 
 (z.B., http://\<public-ip\>:8080 ). Gebe hier das kopierte Password ein.
 
 Klicke jetzt auf Select Plugins to install
 
-# Entferne den Haken bei:
+## Entferne den Haken bei:
 
 Ant
 
@@ -125,7 +125,7 @@ Mailer
 
 Klicke auf OK und warte bis die Plugins installiert sind
 
-Erstelle den ersten Admin user:
+## Erstelle den ersten Admin user:
 
 Username: admin
 
@@ -177,10 +177,10 @@ Klicke auf Console Output
 
 **2.4 Anpassen des Jenkinsfile**
 
-Öffne deinen Fork mit einem Texteditor
+### Öffne deinen Fork mit einem Texteditor
 
-Bearbeite dieJenkinsfile Datei, sodass neben dem npm ci auch ein Build der React App ausgeführt wird Füge deine Änderungen nach dem echo command ein
+### Bearbeite dieJenkinsfile Datei, sodass neben dem npm ci auch ein Build der React App ausgeführt wird Füge deine Änderungen nach dem echo command ein
 
-Commite und Pushe deine Änderungen
+### Commite und Pushe deine Änderungen
 
-Nach spätestens 5 Minuten sollte ein neuer Job starten
+### Nach spätestens 5 Minuten sollte ein neuer Job starten
