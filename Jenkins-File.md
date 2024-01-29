@@ -25,7 +25,7 @@ Installiere docker und docker compose auf der EC2 Instanz
 
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get rem
 
-# Add Docker's official GPG key:
+## Add Docker's official GPG key:
 
 sudo apt-get update
 
