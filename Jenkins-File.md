@@ -1,6 +1,5 @@
-**jenkins-pipeline.md**
 
-**Praxis: Jenkins mit AWS EC2 Instance**
+# Praxis: Jenkins mit AWS EC2 Instance
 
 **Zielsetzung**
 
@@ -8,7 +7,7 @@ Statische Website mit React
 
 CI/CD mit Jenkins auf einer AWS EC2 Instance
 
-**1. Vorbereitung**
+*1. Vorbereitung*
 
 **1.1 AWS EC2 Instance**
 
